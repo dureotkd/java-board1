@@ -1,4 +1,4 @@
-package com.sbs.java.blog;
+package com.sbs.java.blog.servlet;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -13,9 +13,12 @@ import javax.servlet.http.HttpServletResponse;
 public class HomeMainServlet extends HttpServlet {
 	
 	
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) 
+		throws ServletException, IOException {
 	
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		response.setContentType("text/html; charset=utf-8 ");
+		
+		request.getRequestDispatcher("/jsp/home/main.jsp").forward(request, response);
 	}
 
 
