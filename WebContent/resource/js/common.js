@@ -1,3 +1,5 @@
+
+
 function MobileSideBar__init() {
     var $btnToggleMobileSideBar = $('.btn-toggle-mobile-side-bar');
 

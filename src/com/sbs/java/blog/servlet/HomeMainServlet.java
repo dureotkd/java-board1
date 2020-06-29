@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet("/home/main") // 브라우저  입력창에 실행되는 놈 !
+@WebServlet("/s/home/main") // 브라우저  입력창에 실행되는 놈 !
 
 public class HomeMainServlet extends HttpServlet {
 	

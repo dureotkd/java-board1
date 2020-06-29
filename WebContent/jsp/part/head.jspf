@@ -5,6 +5,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<title>Document</title>
+
 <link rel="stylesheet"
 	href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
 	integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
@@ -14,15 +16,16 @@
 	href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,800&display=swap"
 	rel="stylesheet">
 
-<script
-	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link rel="stylesheet" href="/blog/resource/css/common.css" />	
 <link rel="stylesheet" href="/blog/resource/css/home/main.css">
+
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <link rel="stylesheet" href="/blog/resource/js/common.js">
 <link rel="stylesheet" href="/blog/resource/js/home/main.js">
 
-<title>Document</title>
+
 </head>
 <body>
 
@@ -32,7 +35,7 @@
 
 		<!--로고-->
 		<div class="logo">
-			<i class="fas fa-bolt"><a href="/blog/home/main"> B.w
+			<i class="fas fa-bolt"><a href="/blog/s/home/main"> B.w
 					<nav>with code</nav>
 			</a></i>
 		</div>
@@ -40,9 +43,9 @@
 
 		<div class="top-menu">
 			<ul>
-				<li><a class="button" href="/blog/home/main">HOME</a></li>
-				<li><a class="button" href="#">Articles</a></li>
-				<li><a class="button" href="/blog/home/aboutMe">About me</a></li>
+				<li><a class="button" href="/blog/s/home/main">HOME</a></li>
+				<li><a class="button" href="/blog/s/home/article">Articles</a></li>
+				<li><a class="button" href="/blog/s/home/aboutMe">About me</a></li>
 
 			</ul>
 		</div>
@@ -53,7 +56,7 @@
 		<div class="link">
 			<a href="https://www.instagram.com/?hl=ko" target="_blank"><i class="fab fa-instagram"></i></a>
 			<a href="https://github.com/dureotkd" target="_blank"><i class="fab fa-github"></i></a>
-			<a href="https://www.youtube.com/channel/UC2S_vz17N1SbHHrddi7PwAg?view_as=subscriber" target="_blank"><i class="fab fa-tumblr"></i></a>
+			<a href="https://www.youtube.com/channel/UC2S_vz17N1SbHHrddi7PwAg?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a>
 		</div>
 	</div>
 
