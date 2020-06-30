@@ -7,7 +7,30 @@
 <%
 	List<Article> articles = (List<Article>) request.getAttribute("articles");
 %>
+<link rel="stylesheet" href="/blog/resource/css/common.css" />
+<link rel="stylesheet" href="/blog/resource/css/home/main.css" />
+<script src="${pageContext.request.contextPath}/resource/js/common.js"></script>
+<script src="${pageContext.request.contextPath}/resource/js/home/main.js"></script>
 
+<style>
+
+.title{
+	
+	color:red;
+}
+.title > a{
+	color:red;
+}
+
+h2 {
+	text-align:center;
+}
+
+.table-box {
+	display:flex;
+	justify-content:center;
+}
+</style>
 <body>
 	<h2 class = "con">게시물 리스트</h2>
 	

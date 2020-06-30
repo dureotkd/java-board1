@@ -1,4 +1,5 @@
 
+
 <%@ page import="java.util.List"%>
 <%@ page import="com.sbs.java.blog.dto.Article"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -8,8 +9,6 @@
 	Article article = (Article) request.getAttribute("article");
 %>
 <link rel="stylesheet" href="css/common.css" />
-<script
-	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <script src="${pageContext.request.contextPath}/resource/js/common.js"></script>
 
@@ -52,37 +51,53 @@
 
 <script
 	src="${pageContext.request.contextPath}/resource/js/home/main.js"></script>
+
+<style>
+.con {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 3rem;
+}
+
+.flex {
+	display: flex;
+}
+</style>
+
+
 <body>
-	<h2 class="con">게시물 세부사항</h2>
 
-	<div class="con table-box">
-		<table border="1">
-			<tbody>
-				<tr>
-					<th class="id">ID</th>
-					<td class="id"><%=article.getId()%></td>
-				</tr>
-				<tr>
-					<th class="col">등록날짜</th>
-					<td class="col"><%=article.getRegDate()%></td>
-				</tr>
-				<tr>
-					<th class="col">갱신날짜</th>
-					<td class="col"><%=article.getUpdateDate()%></td>
-				</tr>
-				<tr>
-					<th class="title">제목</th>
-					<td class="title text-align-left"><%=article.getTitle()%></td>
-				</tr>
-				<tr>
-					<th class="body">내용</th>
-					<td class="body text-align-left">
-						<div id="origin1"><%=article.getBody()%></div>
-						<div id="viewer1"></div>
-					</td>
-				</tr>
-			</tbody>
 
-		</table>
-	</div>
+
+	<nav class="con">
+		<div class="title"><%=article.getTitle()%></div>
+		<div class="id"><%=article.getId()%></div>
+		<div class="regDate"><%=article.getRegDate()%></div>
+		<div class="update"><%=article.getUpdateDate()%></div>
+	</nav>
+
+	<div id="origin1" style="display:none;"><%=article.getBody()%></div>
+	<div class="id"><%=article.getId()%></div>
+	<div id="viewer1"></div>
+	<script>
+		var editor1__initialValue = $('#origin1').html();
+		var editor1 = new toastui.Editor({
+			el : document.querySelector('#viewer1'),
+			height : '800px',
+			initialValue : editor1__initialValue,
+			viewer : true,
+			plugins : [ toastui.Editor.plugin.codeSyntaxHighlight ]
+		});
+	</script>
+
+
+
+
 	<%@ include file="/jsp/part/foot.jspf"%>

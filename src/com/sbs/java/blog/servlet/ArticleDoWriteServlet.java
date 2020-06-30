@@ -21,11 +21,10 @@ public class ArticleDoWriteServlet extends HttpServlet {
 //		1 .한글설정 해주고 
 		response.setContentType("text/html; charset=UTF-8");
 // 	   2. url 접속 코드 넣어주고		
-		String url = "jdbc:mysql://localhost: 3306/blog?serverTimezone=Asia/Seoul&useOldAliasMetadataBehavior=true";
-		String user = "sbsst";;
+		String url = "jdbc:mysql://site39.iu.gy:3306/site39?serverTimezone=Asia/Seoul&useOldAliasMetadataBehavior=true";
+		String user = "site39";
 		String password = "sbs123414";
-		String driverName = "com.mysql.cj.jdbc.Driver";
-//		3. title ,body 값 넣어주고
+		String driverName = "com.mysql.cj.jdbc.Driver";//		3. title ,body 값 넣어주고
 		String title = request.getParameter("title");
 		String body = request.getParameter("body");
 // sqp 연결 널 해주고		

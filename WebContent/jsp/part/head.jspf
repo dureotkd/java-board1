@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
@@ -7,112 +7,124 @@
 
 <title>Document</title>
 
-<link rel="stylesheet"
-	href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
-	integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
-	crossorigin="anonymous">
 
-<link
-	href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,800&display=swap"
-	rel="stylesheet">
-
-<link rel="stylesheet" href="/blog/resource/css/common.css" />	
+<link rel="stylesheet" href="/blog/resource/css/common.css" />
 <link rel="stylesheet" href="/blog/resource/css/home/main.css">
 
+
+<link
+	href="https://fonts.googleapis.com/css2?family=Notable&display=swap"
+	rel="stylesheet">
+<link
+	href="https://fonts.googleapis.com/css2?family=Notable&family=Roboto&display=swap"
+	rel="stylesheet">
 <script
 	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/3b1f8c6d21.js"
+	crossorigin="anonymous"></script>
 
-<link rel="stylesheet" href="/blog/resource/js/common.js">
-<link rel="stylesheet" href="/blog/resource/js/home/main.js">
-
+<srcipt src="/blog/resource/js/common.js"></srcipt>
+<srcipt src="/blog/resource/js/home/main.js"></srcipt>
 
 </head>
 <body>
 
-
-	<!--상단 바-->
-	<div class="top-bar visible-on-md-up ">
-
-		<!--로고-->
-		<div class="logo">
-			<i class="fas fa-bolt"><a href="/blog/s/home/main"> B.w
-					<nav>with code</nav>
-			</a></i>
-		</div>
-		<!-- 메뉴-->
-
-		<div class="top-menu">
-			<ul>
-				<li><a class="button" href="/blog/s/home/main">HOME</a></li>
-				<li><a class="button" href="/blog/s/home/article">Articles</a></li>
-				<li><a class="button" href="/blog/s/home/aboutMe">About me</a></li>
-
+	<div class="top-bar visible-on-md-up  flex">
+		<a href="index.html" class="logo" target="_blank"> <img
+			src="/blog/resource/css/home/logo2.png" alt=""> <img
+			class="flex2" src="/blog/resource/css/home/logo1.png " alt="">
+		</a>
+		<div class="menu-1 flex">
+			<ul class="flex h100 flex-jus-end">
+				<li class="flex flex-ai-c  h100"><a
+					class="flex flex-ai-c  h100" href="index.html" target="_blank">Home</a></li>
+				<li class="flex  flex-ai-c  h100"><a
+					class="flex flex-ai-c  h100" href="#" target="_blank">Article</a></li>
+				<li class="flex  flex-ai-c  h100"><a
+					class="flex flex-ai-c  h100" href="#" target="_blank">About</a></li>
+				<li class="flex  flex-ai-c  h100"><a
+					class="flex flex-ai-c  h100" href="#" target="_blank">SNS</a>
+					<ul class="flex flex-ai-c  h100">
+						<li class="flex flex-ai-c  h100"><a
+							class="flex flex-ai-c  h100"
+							href="https://www.youtube.com/channel/UC2S_vz17N1SbHHrddi7PwAg?view_as=subscriber">
+								<i class="fab fa-youtube"></i>
+						</a></li>
+						<li class="flex flex-ai-c  h100"><a
+							class="flex flex-ai-c  h100" href="https://github.com/dureotkd/">
+								<i class="fab fa-github"></i>
+						</a></li>
+						<li class="flex flex-ai-c  h100"><a
+							class="flex flex-ai-c  bor-insta h100"
+							href="https://www.instagram.com/?hl=ko"> <i
+								class="fab fa-instagram"></i>
+						</a></li>
+					</ul></li>
 			</ul>
 		</div>
 
 
-		<!--링크-->
-
-		<div class="link">
-			<a href="https://www.instagram.com/?hl=ko" target="_blank"><i class="fab fa-instagram"></i></a>
-			<a href="https://github.com/dureotkd" target="_blank"><i class="fab fa-github"></i></a>
-			<a href="https://www.youtube.com/channel/UC2S_vz17N1SbHHrddi7PwAg?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a>
+		<div class="search-box flex">
+			<i class="fas fa-search flex flex-ai-c"></i> <input
+				class="flex flex-ai-c" type="text">
 		</div>
-	</div>
-
-	<!-- pc 상단 바 끝-->
 
 
 
-	<!--모바일 상단 바 시작-->
-
-	<div class="mobile-top-bar visible-on-sm-down">
-
-		<a href="#" class="btn-toggle-mobile-side-bar">
+		<a href="#" class="btn-toggle-pc-side-bar ">
 			<div></div>
 			<div></div>
 			<div></div>
 		</a>
 
 
-		<div class="mobile-logo">
-			<i class="fas fa-bolt"></i>
-
-
-		</div>
-
-		<div class="mobile-option">
-
-			<i class="fas fa-adjust"></i>
-
+		<div class="pc-side-bar">
+			<nav class="menu-2">
+				<ul>
+					<li><a href="">Login</a></li>
+					<li><a href="">Logout</a></li>
+					<li><a href="">Join</a></li>
+					<li><a href="">SNS</a></li>
+				</ul>
+			</nav>
 		</div>
 
 	</div>
 
-	<!--모바일 상단 바 끝-->
+	<div class="page-1 visible-on-md-up flex ">
 
-	<!--모바일 사이드바 시작 -->
-
-	<div class="mobile-side-bar visible-on-sm-down ">
-
-		<nav class="menu-box-1 ">
-			<ul>
-				<li><a href="/home/main" class="block">Home</a></li>
-				<li><a href="#" class="block">Articles</a></li>
-				<li><a href="#" class="block">About Me</a></li>
-				<li><a href="#" class="block">SNS</a>
-					<ul>
-						<li><a class="block" href="#"><div id="asd">
-									<i class="fab fa-github">
-								</div> </i></a></li>
-						<li><a class="block" href="#"><div id="asd">
-									<i class="fab fa-tumblr">
-								</div> </i></a></li>
-						<li><a class="block" href="#"><div id="asd">
-									<i class="fab fa-instagram">
-								</div> </i></a></li>
-					</ul></li>
-			</ul>
-		</nav>
+		<div class="text w100 flex flex-ai-c ">
+			<p class="text2 flex flex-ai-c ">
+				The Developer <br> Beautiful Code <br>
+			</p>
+		</div>
 	</div>
+
+
+
+	<!--    모바일 탑바 시작-->
+
+
+	<div class="M-top-bar flex ">
+
+		<a href="#" class="btn-toggle-mobile-side-bar ">
+			<div></div>
+			<div></div>
+			<div></div>
+		</a>
+
+		<div class="M-logo visible-on-md-down">
+			<a href="#"> <img src="/blog/resource/css/home/logo2.png" alt="">
+				<img class="M-flex2" src="/blog/resource/css/home/logo1.png " alt="">
+			</a>
+		</div>
+
+	</div>
+
+
+
+	<div class="M-page-1 visible-on-sm-down"></div>
+
+</body>
+</html>
 <!-- 메인 -->

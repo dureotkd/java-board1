@@ -25,8 +25,8 @@ import com.sbs.java.blog.util.DBUtil;
 public class ArticleDetailServlet extends HttpServlet {
 
 	private Article getArticle(int id) {
-		String url = "jdbc:mysql://localhost:3306/blog?serverTimezone=Asia/Seoul&useOldAliasMetadataBehavior=true";
-		String user = "sbsst";
+		String url = "jdbc:mysql://site39.iu.gy:3306/site39?serverTimezone=Asia/Seoul&useOldAliasMetadataBehavior=true";
+		String user = "site39";
 		String password = "sbs123414";
 		String driverName = "com.mysql.cj.jdbc.Driver";
 		// 1. 접속
