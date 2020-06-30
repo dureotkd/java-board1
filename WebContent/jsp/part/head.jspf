@@ -4,62 +4,53 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <title>Document</title>
-
-
 <link rel="stylesheet" href="/blog/resource/css/common.css" />
 <link rel="stylesheet" href="/blog/resource/css/home/main.css">
-
-
-<link
-	href="https://fonts.googleapis.com/css2?family=Notable&display=swap"
-	rel="stylesheet">
-<link
-	href="https://fonts.googleapis.com/css2?family=Notable&family=Roboto&display=swap"
-	rel="stylesheet">
-<script
-	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://kit.fontawesome.com/3b1f8c6d21.js"
-	crossorigin="anonymous"></script>
-
+<link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Notable&family=Roboto&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/3b1f8c6d21.js" crossorigin="anonymous"></script>
 <srcipt src="/blog/resource/js/common.js"></srcipt>
 <srcipt src="/blog/resource/js/home/main.js"></srcipt>
 
 </head>
+	
 <body>
-
+	
 	<div class="top-bar visible-on-md-up  flex">
-		<a href="index.html" class="logo" target="_blank"> <img
-			src="/blog/resource/css/home/logo2.png" alt=""> <img
-			class="flex2" src="/blog/resource/css/home/logo1.png " alt="">
+		<a href="/blog/jsp/home/main.jsp" class="logo" > <img
+			src="/blog/resource/css/home/logo2.png" alt="/blog/jsp/home/main.jsp"> <img
+			class="flex2" src="/blog/resource/css/home/logo1.png " alt="/blog/jsp/home/main.jsp">
 		</a>
 		<div class="menu-1 flex">
 			<ul class="flex h100 flex-jus-end">
 				<li class="flex flex-ai-c  h100"><a
-					class="flex flex-ai-c  h100" href="index.html" target="_blank">Home</a></li>
+					class="flex flex-ai-c  h100" href="/blog/jsp/home/main.jsp" >Home</a></li>
 				<li class="flex  flex-ai-c  h100"><a
-					class="flex flex-ai-c  h100" href="#" target="_blank">Article</a></li>
+					class="flex flex-ai-c  h100" href="/blog/s/article/list">Article</a></li>
 				<li class="flex  flex-ai-c  h100"><a
-					class="flex flex-ai-c  h100" href="#" target="_blank">About</a></li>
-				<li class="flex  flex-ai-c  h100"><a
-					class="flex flex-ai-c  h100" href="#" target="_blank">SNS</a>
+					class="flex flex-ai-c  h100" href="#">About</a></li>
+				<li class="SNS1 flex  flex-ai-c  h100"><a
+					class="flex flex-ai-c  h100" href="#">SNS</a>
 					<ul class="flex flex-ai-c  h100">
 						<li class="flex flex-ai-c  h100"><a
 							class="flex flex-ai-c  h100"
-							href="https://www.youtube.com/channel/UC2S_vz17N1SbHHrddi7PwAg?view_as=subscriber">
+							href="https://www.youtube.com/channel/UC2S_vz17N1SbHHrddi7PwAg?view_as=subscriber"  target="_blank">
 								<i class="fab fa-youtube"></i>
 						</a></li>
 						<li class="flex flex-ai-c  h100"><a
-							class="flex flex-ai-c  h100" href="https://github.com/dureotkd/">
+							class="flex flex-ai-c  h100" href="https://github.com/dureotkd/"  target="_blank">
 								<i class="fab fa-github"></i>
 						</a></li>
 						<li class="flex flex-ai-c  h100"><a
 							class="flex flex-ai-c  bor-insta h100"
-							href="https://www.instagram.com/?hl=ko"> <i
+							href="https://www.instagram.com/?hl=ko"  target="_blank"> <i
 								class="fab fa-instagram"></i>
-						</a></li>
-					</ul></li>
+						</a>
+						</li>
+					</ul>
+					</li>
 			</ul>
 		</div>
 
@@ -91,21 +82,14 @@
 
 	</div>
 
-	<div class="page-1 visible-on-md-up flex ">
-
-		<div class="text w100 flex flex-ai-c ">
-			<p class="text2 flex flex-ai-c ">
-				The Developer <br> Beautiful Code <br>
-			</p>
-		</div>
-	</div>
+	
 
 
 
 	<!--    모바일 탑바 시작-->
 
 
-	<div class="M-top-bar flex ">
+	<div class="M-top-bar flex visible-on-sm-down">
 
 		<a href="#" class="btn-toggle-mobile-side-bar ">
 			<div></div>
@@ -123,8 +107,7 @@
 
 
 
-	<div class="M-page-1 visible-on-sm-down"></div>
-
+	
 </body>
 </html>
 <!-- 메인 -->

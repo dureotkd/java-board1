@@ -32,6 +32,7 @@ a{
 
 img {
     height: 100px;
+    
 }
 
 .top-bar > .logo {
@@ -62,7 +63,6 @@ img {
 
 
 .top-bar:hover {
-    border: 1px solid #6e6d7a;
     background-color: white;
 }
 
@@ -90,7 +90,7 @@ img {
 
 .menu-1 ul ul {
     transition: opacity.2s;
-    opacity: 0;
+    display:none;
     position: absolute;
     top: 100%;
     right: 0%;
@@ -105,8 +105,8 @@ img {
     position: relative;
 }
 
-.menu-1 > ul>li:hover ul{
-  opacity: 1;
+.menu-1 > ul> .SNS1:hover ul{
+  display:inline-block;
 }
 
 .search-box{
